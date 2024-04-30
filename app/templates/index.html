@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buscor - Online Ticket Sales">
+    <meta name="author" content="Buscor">
+    <title>Buscor - Online Ticket Sales</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'signup' %}">Signup</a></li>
+                    <li><a href="{% url 'signin' %}">Signin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section-home" class="section" style="background-image: url('{% static 'images/background.png' %}');">
+            <div class="content">
+                <h2>Welcome to Buscor</h2>
+                <p>A leading platform for booking bus tickets online.</p>
+                <a class="btn-primary" href="#section-benefits">Get Started</a>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        
+        <section id="section-benefits" class="section" style="background-color: #F1EFEF;">
+            <h2 style="color: #333; margin-bottom: 20px;">Benefits with Traveling with Us</h2>
+            <div class="grid" style="display: flex; justify-content: space-between; gap: 20px; align-items: center;">
+                <div class="grid-item">
+                    <img src="{% static 'images/pic1.jpeg' %}" alt="Benefit 1" style="max-width: 100%; border-radius: 10px; transition: transform 0.3s;">
+                    <p style="font-weight: bold; margin-top: 10px;">Convenient Booking</p>
+                    <p style="font-size: 16px;">Our easy online booking system makes reserving your bus tickets a breeze. Say goodbye to long queues and book your seats with just a few clicks.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="{% static 'images/pic2.jpeg' %}" alt="Benefit 2" style="max-width: 100%; border-radius: 10px; transition: transform 0.3s;">
+                    <p style="font-weight: bold; margin-top: 10px;">Safe and Reliable</p>
+                    <p style="font-size: 16px;">Your safety is our top priority. Our experienced drivers and well-maintained buses ensure you reach your destination securely and on time.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="{% static 'images/pic3.jpeg' %}" alt="Benefit 3" style="max-width: 100%; border-radius: 10px; transition: transform 0.3s;">
+                    <p style="font-weight: bold; margin-top: 10px;">Community-Focused</p>
+                    <p style="font-size: 16px;">We are proud to serve the Nelspruit community and surrounding areas. Buscor is dedicated to providing accessible, affordable, and reliable transportation for all.</p>
+                </div>
+            </div>
+            <a class="btn-primary" href="#section-contact" style="margin-top: 30px;">Contact Us</a>
+        </section>
+
+        <section id="section-about" class="section" style="background-color: #F1EFEF;">
+            <h2>About Buscor</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="{% static 'images/pic6.jpeg' %}" alt="About 3" style="max-width: 65%; border-radius: 10px;">
+                    <p style="font-size: 18px; line-height: 1.5; text-align: left; margin-top: 20px; color: #333;">
+                        Buscor is your trusted partner in bus transportation. With a rich history spanning over several decades, we are committed to providing safe, reliable, and comfortable journeys to our passengers. Our well-maintained fleet of buses, driven by experienced professionals, ensures that you reach your destination on time and in style.
+                    </p>
+                </div>
+            </div>
+            <a class="btn-primary" href="#section-contact">Contact Us</a>
+        </section>
+
+        <section id="section-contact" class="section" style="background-color: #F1EFEF;">
+            <h2 style="color: #333;">Contact Us</h2>
+            <br/>
+            <br/>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="{% static 'images/email.png' %}" alt="Email Icon" class="contact-icon" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+                    <p style="display: inline-block; vertical-align: middle;"><a href="mailto:calvintsepo138@gmail.com">calvintsepo138@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <img src="{% static 'images/phone.png' %}" alt="Phone Icon" class="contact-icon" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+                    <p style="display: inline-block; vertical-align: middle;"><a href="tel:+27-456-3789">+27-456-3789</a></p>
+                </div>
+                <div class="contact-item">
+                    <img src="{% static 'images/location.png' %}" alt="Location Icon" class="contact-icon" style="width: 15px; height: 15px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+                    <p style="display: inline-block; vertical-align: middle;">2391 Diesel Street, Nelspruit</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="background-color: orange;">
+            <p>&copy; 2023 Tech Wizards. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

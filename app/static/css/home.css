@@ -1,0 +1,179 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+
+.header {
+    background-color: orange;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 20px;
+    
+}
+
+.logo {
+    width: 100px; 
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.content {
+    z-index: 1;
+    position: relative;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.grid-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+address {
+    font-size: 16px;
+}
+
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#section-home {
+    
+    height: 400px;
+    
+   
+   
+    background-size: cover; 
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -19,7 +19,7 @@ body {
 .header {
     background-color: orange;
     color: black;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    height: 20px;
+    height: 40px;
     
 }
 

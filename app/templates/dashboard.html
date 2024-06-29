@@ -1,0 +1,291 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="{% static 'imgs/customer01.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card" onclick="openFormPopup('Bus 1', 'Route 1', 50, 10)">
+                    <div>
+                        <div class="purchaseTicket">Purchase Ticket</div>
+                       
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="bus-outline"></ion-icon>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- ================ Form Popup ================ -->
+            <div id="formPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closeFormPopup()">&times;</span>
+                    <h2>Purchase Ticket</h2>
+                    <form id="ticketForm">
+                        <div class="form-group">
+                            <label for="locationFrom">From:</label>
+                            <select id="locationFrom" class="form-control" required>
+                                <option value="Nelspruit">Nelspruit</option>
+                                <option value="Lekazi">Lekazi</option>
+                                <option value="Dwaleni">Dwaleni</option>
+                                <option value="Pienaar">Pienaar</option>
+                                <option value="Bhuga">Bhuga</option>
+                                <option value="Clau-Clau">Clau-Clau</option>
+                                <option value="Zwelisha">Zwelisha</option>
+                                <option value="Gutshwa">Gutshwa</option>
+                                <option value="Chweni">Chweni</option>
+                                <option value="Maporo">Maporo</option>
+                                <option value="Legogote">Legogote</option>
+                                <option value="Matsulu">Matsulu</option>
+                                <option value="Malekutu">Malekutu</option>
+                                <option value="Mpaken">Mpaken</option>
+                                <option value="Makoko">Makoko</option>
+                                <option value="Spelenyane">Spelenyane</option>
+                                <option value="Luphisi">Luphisi</option>
+                                <option value="Phola">Phola</option>
+                                <option value="Mgcobaneni">Mgcobaneni</option>
+                                <option value="Swalala">Swalala</option>
+                                <option value="Jerusalem">Jerusalem</option>
+                                <option value="Dayizenza">Dayizenza</option>
+                                <option value="Mahushu">Mahushu</option>
+                                <option value="Mvangatini">Mvangatini</option>
+                                <option value="Bongani">Bongani</option>
+                                <option value="Sandriver">Sandriver</option>
+                                <option value="Numbi">Numbi</option>
+                                <option value="Jill Brown">Jill Brown</option>
+                                <option value="Hazyview">Hazyview</option>
+                                <option value="Shabalala">Shabalala</option>
+                                <option value="Nyongane">Nyongane</option>
+                                <option value="Sanibonani">Sanibonani</option>
+                                <option value="Mkhuhlu">Mkhuhlu</option>
+                                <option value="Hectorspruit">Hectorspruit</option>
+                                <option value="Mariti">Mariti</option>
+                                <option value="Jeppes Reef">Jeppes Reef</option>
+                                <option value="Schoemansdal">Schoemansdal</option>
+                                <option value="Langeloop">Langeloop</option>
+                                <option value="Mzinti">Mzinti</option>
+                                <option value="Driekoppies">Driekoppies</option>
+                                <option value="Kamhlushwa">Kamhlushwa</option>
+                                <option value="Schulzendal">Schulzendal</option>
+                                <option value="Phiva">Phiva</option>
+                                <option value="Middelplaas">Middelplaas</option>
+                                <option value="Ntunda">Ntunda</option>
+                                <option value="Mdladla">Mdladla</option>
+                                <option value="Buffelspruit">Buffelspruit</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="locationTo">To:</label>
+                            <select id="locationTo" class="form-control" required>
+                                <!-- Similar options as 'locationFrom' -->
+                                <option value="City A">Nelspruit</option>
+                                <option value="City B">Lekazi</option>
+                                <option value="City C">Dwaleni</option>
+                                <option value="City C">Pienaar</option>
+                                <option value="City C">Bhuga</option>
+                                <option value="City C">Clau-Clau</option>
+                                <option value="City C">Zwelisha</option>
+                                <option value="City C">Gutshwa</option>
+                                <option value="City C">Chweni</option>
+                                <option value="City C">Maporo</option>
+                                <option value="City C">Legogote</option>
+                                <option value="City C">Matsulu</option>
+                                <option value="City C">Malekutu</option>
+                                <option value="City C">Mpaken</option>
+                                <option value="City C">Makoko</option>
+                                <option value="City C">Spelenyane</option>
+                                <option value="City C">Luphisi</option>
+                                <option value="City C">Phola</option>
+                                <option value="City C">Mgcobaneni</option>
+                                <option value="City C">Swalala</option>
+                                <option value="City C">Jerusalem</option>
+                                <option value="City C">Dayizenza</option>
+                                <option value="City C">Mahushu</option>
+                                <option value="City C">Mvangatini</option>
+                                <option value="City C">Bongani</option>
+                                <option value="City C">Sandrive</option>
+                                <option value="City C">Numbi</option>
+                                <option value="City C">Jill Brown</option>
+                                <option value="City C">Hazyview</option>
+                                <option value="City C">Shabalala</option>
+                                <option value="City C"> Nyongane</option>
+                                <option value="City C">Sanibonani</option>
+                                <option value="City C">Mkhuhlu</option>
+                                <option value="City C">Hectorspruit</option>
+                                <option value="City C">Mariti</option>
+                                <option value="City C">Jeppes Reef</option>
+                                <option value="City C">Schoemansdal</option>
+                                <option value="City C">Langeloop</option>
+                                <option value="City C">Mzinti</option>
+                                <option value="City C">Driekoppies</option>
+                                <option value="City C">Kamhlushwa</option>
+                                <option value="City C">Schulzendal</option>
+                                <option value="City C">Phiva</option>
+                                <option value="City C">Middelplaas</option>
+                                <option value="City C">Ntunda</option>
+                                <option value="City C">Mdladla</option>
+                                <option value="City C">Buffelspruit</option>
+
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="numDays">Days:</label>
+                            <select id="numDays" class="form-control" required onchange="updatePrice()">
+                                <option value="5">5 Days</option>
+                                <option value="6">6 Days</option>
+                                <option value="7">7 Days</option>
+                                <option value="22">22 Days</option>
+                                <option value="26">26 Days</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalPrice">Price:</label>
+                            <input type="text" id="totalPrice" class="form-control" readonly>
+                        </div>
+                        <button type="submit">Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="{% static 'js/dashboard.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let basePrice = 0;
+        let dailyRate = 0;
+
+        function openFormPopup(bus, route, capacity, price) {
+            basePrice = price;
+            dailyRate = price / 5; // Assume the base price is for 5 days
+            document.getElementById('formPopup').style.display = 'flex';
+            updatePrice();
+        }
+
+        function closeFormPopup() {
+            document.getElementById('formPopup').style.display = 'none';
+        }
+
+        function updatePrice() {
+            const numDays = document.getElementById('numDays').value;
+            const totalPrice = basePrice + (numDays - 5) * dailyRate;
+            document.getElementById('totalPrice').value = `$${totalPrice.toFixed(2)}`;
+        }
+    </script>
+</body>
+
+</html>

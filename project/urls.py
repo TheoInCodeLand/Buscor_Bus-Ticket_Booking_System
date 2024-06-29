@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-from app.views import Home  # Import the Home view
+from app.views import home  
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Home, name='home'),  # Define URL pattern for the root URL
-    path('app/', include('app.urls'))
+    path('', home, name='Home'),  
+    path('app/', include('app.urls')),
+    path('', include('django.contrib.auth.urls')),
 ]

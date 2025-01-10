@@ -1,14 +1,19 @@
 "# BuscorTickets" 
 the codes for running the project
 
-
+install visual studio  code 
+install python external 
 on CMD after installing python type pip install virtualenv
+
+on vs code run the following terminals:
 
 
 cd env/Scripts
-
+cmd 
 activate
-got back to the root project
+cd ..
+cd ..
+
 
 python manage.py makemigrations
 
